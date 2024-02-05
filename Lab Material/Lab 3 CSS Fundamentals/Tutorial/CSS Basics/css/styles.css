@@ -41,11 +41,7 @@ footer {
 }
 
 
-#firstli {
-    color: brown;
-}
-
-.red {
+/* .red {
     background-color: red;
     color: white;
 }
@@ -53,21 +49,55 @@ footer {
 .yellow {
     text-decoration: underline;
     color: blue;
-}
+} */
 
 /* Attribute Selector */
-input[type="email"] {
-    background-color: green;
+input[type="email"] {}
+
+/* Pseudo Elements */
+p::after {
+    content: "**";
 }
 
+p::before {
+    content: "--";
+    background: yellow;
 
+}
 
+/* Pseudo Classes */
+
+nav li:hover {
+    color: white;
+    background: green;
+    font-size: larger;
+}
+
+input:required {
+    background-color: red;
+}
+
+input:checked {}
+
+/* P */
 /* AND operator */
 /* li.red {
     color: blue;
 } */
 
 
+/* li:first-child {
+    background-color: beige;
+    font-size: larger;
+    color: brown;
+    border: 1px solid chocolate;
+} */
+li:nth-child(2n-1) {
+    background-color: beige;
+    font-size: larger;
+    color: brown;
+    border: 1px solid chocolate;
+}
 
 
 
