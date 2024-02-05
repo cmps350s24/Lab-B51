@@ -1,0 +1,86 @@
+/* Universal Selector */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Element Selector */
+article {
+    color: red;
+    margin: 10px;
+}
+
+/* Class Selector */
+.red {
+    color: rgb(45, 45, 179);
+}
+
+/* Id selector */
+#first {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* Combine */
+
+/* all siblings */
+section~p {
+    color: red;
+}
+
+/* direct sibling */
+section+p {
+    background-color: blueviolet;
+}
+
+/* OR Operator */
+main,
+footer {
+    outline: aqua dotted 3px;
+}
+
+
+#firstli {
+    color: brown;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.yellow {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Attribute Selector */
+input[type="email"] {
+    background-color: green;
+}
+
+
+
+/* AND operator */
+/* li.red {
+    color: blue;
+} */
+
+
+
+
+
+
+/* article>p {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+p.news~section {
+    outline: red solid 2px;
+    text-align: center;
+} */
