@@ -7,40 +7,21 @@
     <title>Document</title>
 
     <style>
-        .box3 {
-            height: 80px;
-        }
-
-        .box2 {
-            height: 60px;
-        }
-
         .container {
-            display: flex;
-            /* flex-wrap: wrap; */
-            border: 1px solid;
-            gap: 10px;
-            /* height: 100px; */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-template-rows: 200px 200px 100px;
+            gap: 1rem;
+            border: 1px solid red;
 
-            /* direction */
-            /* flex-direction: row; */
-
-            justify-content: space-evenly;
-            align-items: center;
-            /* align-content: center; */
+            justify-items: stretch;
+            align-items: ends;
         }
 
         .box {
             background-color: red;
-            width: 50px;
-            padding: 10px;
+            /* width: 50px; */
 
-            /*  */
-
-        }
-
-        .box1 {
-            flex: 1
         }
     </style>
 </head>
@@ -49,10 +30,10 @@
     <div class="container">
         <div class="box box1">lorem sdfdsf dsafdsa empsum code</div>
         <div class="box box2">lorem</div>
-        <!-- <div class="box box3">lorem</div>
+        <div class="box box3">lorem</div>
         <div class="box box4">lorem</div>
         <div class="box box5">lorem</div>
-        <div class="box box6">lorem</div> -->
+        <div class="box box6">lorem</div>
     </div>
 </body>
 

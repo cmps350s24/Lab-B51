@@ -30,6 +30,7 @@
 .main-title {
     text-align: center;
     letter-spacing: 0.2rem;
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
 
     span {
         color: blue;
@@ -131,5 +132,16 @@ footer {
 
     .headline {
         flex-direction: row;
+    }
+
+    .abroad-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        img {
+            /* flex-basis: 200px; */
+            flex: 1
+        }
     }
 }
