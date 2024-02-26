@@ -4,41 +4,51 @@
     box-sizing: border-box;
 }
 
-.header {
-    background-color: rgb(18, 119, 208);
-    height: 10vh;
-}
-
-.nav {
-    background-color: rgb(112, 214, 33);
-    height: 40px;
-}
-
-.main {
-    background-color: rgb(58, 16, 142);
-    color: white;
-
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: 70%;
-}
-
-.footer {
-    background-color: rgb(219, 40, 40);
-    height: 10vh;
-}
-
-.section {
-    background-color: brown;
-}
-
-.aside {
-    background-color: cadetblue;
-}
-
 .container {
     padding: 0.2rem;
     margin: 0.2rem;
     outline: auto;
     height: 95vh;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr 5fr 5fr 1fr;
+    grid-template-areas:
+        'header header'
+        'nav nav'
+        'aside main'
+        'aside section'
+        'footer footer'
+    ;
+}
+
+.header {
+    background-color: rgb(18, 119, 208);
+    grid-area: header;
+}
+
+.nav {
+    background-color: rgb(112, 214, 33);
+    grid-area: nav;
+}
+
+.main {
+    background-color: rgb(58, 16, 142);
+    color: white;
+    grid-area: main;
+}
+
+.footer {
+    background-color: rgb(219, 40, 40);
+    grid-area: footer;
+}
+
+.section {
+    background-color: brown;
+    grid-area: section;
+}
+
+.aside {
+    background-color: cadetblue;
+    grid-area: aside;
 }
