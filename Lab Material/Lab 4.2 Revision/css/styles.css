@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgb(18, 119, 208);
+    /* height: 100px; */
+}
+
+.nav {
+    background-color: rgb(112, 214, 33);
+}
+
+.main {
+    background-color: rgb(58, 16, 142);
+    color: white;
+}
+
+.footer {
+    background-color: rgb(219, 40, 40);
+}
+
+.container {
+    padding: 0.2rem;
+    margin: 0.2rem;
+    outline: auto;
+    height: 50vh;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) auto;
+}
