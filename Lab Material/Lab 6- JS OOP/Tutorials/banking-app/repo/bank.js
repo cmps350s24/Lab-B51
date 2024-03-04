@@ -20,3 +20,9 @@ const accounts = [
         type: 'savings'
     },
 ]
+
+// functions and export them
+
+export function add(account) {
+    accounts.push(account);
+}
