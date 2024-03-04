@@ -1,8 +1,4 @@
 // import the bank
-import bank from './bank.js';
+import { add } from './repo/bank.js';
 
-
-
-
-
-// npm init
+console.log("Hello");
