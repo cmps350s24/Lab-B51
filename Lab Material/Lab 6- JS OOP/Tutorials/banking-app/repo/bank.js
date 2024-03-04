@@ -18,7 +18,7 @@ const accounts = [
         accountNo: 456,
         balance: 60000,
         type: 'savings'
-    },
+    }
 ]
 
 // functions and export them
