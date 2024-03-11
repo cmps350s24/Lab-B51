@@ -39,7 +39,7 @@ async function handleCountryChange() {
     </tr>
     <tr>
         <th>Capital City</th>
-        <td>${country.name.official}</td>
+        <td>${country.capital[0]}</td>
     </tr>
     <tr>
         <th>Currencies</th>
@@ -47,7 +47,7 @@ async function handleCountryChange() {
     </tr>
     <tr>
         <th>Population</th>
-        <td>${country.name.official}</td>
+        <td>${country.}</td>
     </tr>
     <tr>
         <th>Languages</th>
