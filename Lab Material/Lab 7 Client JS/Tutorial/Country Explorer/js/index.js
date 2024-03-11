@@ -29,30 +29,57 @@ async function handleCountryChange() {
     const countries = await data.json()
     const country = countries[0]
 
-    factsArea.innerHTML = `
-<h1>Facts about ${country.name.common}</h1>
-<img src=${country.flags.png}>
-<table>
-    <tr>
-        <th>Official Country Name</th>
-        <td>${country.name.official}</td>
-    </tr>
-    <tr>
-        <th>Capital City</th>
-        <td>${country.capital[0]}</td>
-    </tr>
-    <tr>
-        <th>Currencies</th>
-        <td>${country.name.official}</td>
-    </tr>
-    <tr>
-        <th>Population</th>
-        <td>${country.}</td>
-    </tr>
-    <tr>
-        <th>Languages</th>
-        <td>${country.name.official}</td>
-    </tr>
-</table>
-`
+    factsArea.innerHTML = convertCountryToHTML(country)
 }
+
+function convertCountryToHTML(country) {
+    const languageKeys = Object.keys(country.languages)
+    const currenciesKeys = Object.keys(country.currencies)
+
+    const languages = languageKeys.map(key => country.languages[key]).join(', ')
+    const currencies = currenciesKeys.map(key => country.currencies[key].name).join(', ')
+
+    return `
+        <h1>Facts about ${country.name.common}</h1>
+        <img src=${country.flags.png}>
+        <table>
+            <tr>
+                <th>Official Country Name</th>
+                <td>${country.name.official}</td>
+            </tr>
+            <tr>
+                <th>Capital City</th>
+                <td>${country.capital[0]}</td>
+            </tr>
+            <tr>
+                <th>Currencies</th>
+                <td>${currencies}</td>
+            </tr>
+            <tr>
+                <th>Population</th>
+                <td>${country.population}</td>
+            </tr>
+            <tr>
+                <th>Languages</th>
+                <td>${languages}</td>
+            </tr>
+        </table>
+`
+
+}
+
+
+// const person = {
+//     name: "Ali",
+//     age: 20,
+//     gender: 'Male',
+//     address: {
+//         city: "Karachi",
+//         country: "Pakistan"
+//     }
+// }
+
+// const keys = Object.keys(person)
+// console.log(keys);
+// keys.forEach(key => console.log(person[key]))
+
