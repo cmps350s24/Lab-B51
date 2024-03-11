@@ -11,7 +11,8 @@
     --divider-color: #BDBDBD;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background-color: var(--dark-primary-color);
     color: var(--text-primary-color);
@@ -28,7 +29,11 @@ p {
     margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin: 2rem 0 1.38rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -38,6 +43,11 @@ h1, h2, h3, h4, h5 {
 h1 {
     margin-top: 0;
     font-size: 3.052rem;
+    background-color: #dddddd;
+}
+
+.yellow {
+    background-color: yellow;
 }
 
 h2 {
@@ -56,7 +66,8 @@ h5 {
     font-size: 1.25rem;
 }
 
-small, .text_small {
+small,
+.text_small {
     font-size: 0.8rem;
 }
 
@@ -69,33 +80,37 @@ small, .text_small {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap : 1rem;
+    gap: 1rem;
 }
 
-input, select {
+input,
+select {
     width: 600px;
     height: 2rem;
     line-height: 2rem;
 }
-select>option { 
-    height:50px;
+
+select>option {
+    height: 50px;
     width: 10px;
 }
 
 hr {
     background-color: var(--divider-color)
 }
-.sub-title{
+
+.sub-title {
     background-color: var(--light-primary-color);
     color: var(--secondary-text-color);
     margin: 10px;
 }
 
-.flag-img{
+.flag-img {
     width: 20%;
     height: 20%;
     margin-bottom: 1rem;
 }
+
 /*Table Style*/
 table {
     font-family: arial, sans-serif;
@@ -104,11 +119,12 @@ table {
     width: 100%;
 }
 
-td, th {
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 0.6rem;
-    margin : 10px;
+    margin: 10px;
     background-color: var(--light-primary-color);
     color: var(--secondary-text-color);
 }
@@ -118,7 +134,7 @@ th {
     padding: 1.2rem 0.6rem;
 }
 
-td:nth-child(odd){
+td:nth-child(odd) {
     width: 30%;
     background-color: var(--light-primary-color);
     color: var(--secondary-text-color);

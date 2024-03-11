@@ -27,6 +27,10 @@ async function handleCountryChange() {
     const url = `${countryURL}${countryDD.value}`
     const data = await fetch(url)
     const countries = await data.json()
+
+    localStorage.countries = countries
+
+    delete localStorage.countries
     const country = countries[0]
 
     factsArea.innerHTML = convertCountryToHTML(country)
@@ -44,7 +48,7 @@ function convertCountryToHTML(country) {
         <img src=${country.flags.png}>
         <table>
             <tr>
-                <th>Official Country Name</th>
+                <th class="yellow">Official Country Name</th>
                 <td>${country.name.official}</td>
             </tr>
             <tr>
