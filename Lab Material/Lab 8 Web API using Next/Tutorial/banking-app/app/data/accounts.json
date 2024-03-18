@@ -1,8 +1,8 @@
 [
     {
         "accountNo": 1102,
-        "acctType": "Current",
-        "balance": 500000,
+        "acctType": "Saving",
+        "balance": 40000,
         "monthlyFee": 15
     },
     {
@@ -75,5 +75,11 @@
         "balance": 9090,
         "minimumBalance": 1000,
         "accountNo": "hyCkQZAnt5m1f9ntm-rOU"
+    },
+    {
+        "acctType": "Current",
+        "balance": 123123123,
+        "monthlyFee": 15,
+        "accountNo": "jb9WMrS92zVJDnL0ZnbkM"
     }
 ]

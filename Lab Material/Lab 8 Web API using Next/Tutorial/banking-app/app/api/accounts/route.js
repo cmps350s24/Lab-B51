@@ -1,4 +1,5 @@
 import AccountsRepo from "@/app/repo/accounts-repo"
+
 const accountsRepo = new AccountsRepo()
 
 export async function GET(request) {
@@ -8,7 +9,6 @@ export async function GET(request) {
 
 export async function POST(request) {
     const account = await request.json()
-    
-    const message = "POST method accounts /api/accounts"
-    return Response.json({ message, account: data }, { status: 201 })
+    const newAccounts = await accountsRepo.addAccount(account)
+    return Response.json(newAccounts, { status: 201 })
 }
