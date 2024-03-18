@@ -1,11 +1,14 @@
+import AccountsRepo from "@/app/repo/accounts-repo"
+const accountsRepo = new AccountsRepo()
+
 export async function GET(request) {
-    return Response.json({ message: "GET method /api/accounts" }, { status: 200 })
+    const accounts = await accountsRepo.getAccounts()
+    return Response.json(accounts, { status: 200 })
 }
 
 export async function POST(request) {
-    return Response.json({ message: "POST method accounts /api/accounts" }, { status: 201 })
-}
-
-export async function PUT(request) {
-    return Response.json({ message: "PUT method accounts /api/accounts" }, { status: 200 })
+    const account = await request.json()
+    
+    const message = "POST method accounts /api/accounts"
+    return Response.json({ message, account: data }, { status: 201 })
 }
