@@ -1,8 +1,17 @@
 import AccountsRepo from "@/app/repo/accounts-repo"
+const accountsRepo = new AccountsRepo()
+
 export async function GET(request, { params }) {
-    return Response.json({ message: `GET /api/accounts/${params.id}/transactions` }, { status: 200 })
+    const accountNo = params.id
+
+    const transactions = await accountsRepo.getTransactions(accountNo)
+    return Response.json(transactions, { status: 200 })
 }
 
 export async function POST(request, { params }) {
-    return Response.json({ message: `DELETE /api/accounts/${params.id}/transactions` }, { status: 200 })
+    const transaction = await request.json()
+    const accountNo = params.id
+
+    const accountAfterTransaction = await accountsRepo.addTransaction(transaction, accountNo)
+    return Response.json(accountAfterTransaction, { status: 200 })
 }
