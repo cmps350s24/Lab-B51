@@ -46,8 +46,12 @@ export default class AccountsRepo {
 
     async deleteAccount(accNo) {
         const accounts = await fs.readJson(this.path)
-        const filteredAccounts = accounts.filter(acc => acc.accountNo != accNo)
-        await await fs.writeJson(this.path, filteredAccounts)
+        const index = accounts.findIndex(acc => acc.accountNo == accNo)
+        if (index < 0)
+            return "Account does not exist"
+
+        accounts.splice(index, 1)
+        await fs.writeJson(this.path, accounts)
         return "deleted successfully"
     }
     async addTransaction(transaction) {

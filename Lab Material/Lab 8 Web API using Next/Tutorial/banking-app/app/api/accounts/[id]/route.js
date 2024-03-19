@@ -13,5 +13,7 @@ export async function PUT(request, { params }) {
     return Response.json(updatedAccount, { status: 200 })
 }
 export async function DELETE(request, { params }) {
-    return Response.json({ message: `DELETE /api/accounts/${params.id}` }, { status: 200 })
+    const accountNo = params.id
+    const response = await accountsRepo.deleteAccount(accountNo)
+    return Response.json(response, { status: 200 })
 }
