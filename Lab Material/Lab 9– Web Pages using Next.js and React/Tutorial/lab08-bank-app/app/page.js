@@ -1,14 +1,15 @@
 import { Inter } from 'next/font/google'
+import Accounts from '@/app/accounts/Accounts'
+import accountRepo from '@/app/repo/accounts-repo'
 const inter = Inter({ subsets: ['latin'] })
 
 
 export default async function Home() {
+  const accounts = await accountRepo.getAccounts()
 
-  // we will get the data
-  // const accounts = 
   return (
     <div>
-      <h1>Hello</h1>
-    </div>
+      <Accounts initialAccounts={accounts}></Accounts>
+    </div >
   )
 }
