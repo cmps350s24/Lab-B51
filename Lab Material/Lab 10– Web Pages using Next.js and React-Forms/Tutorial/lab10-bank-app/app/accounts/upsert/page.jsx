@@ -20,6 +20,7 @@ export default function page() {
             body: JSON.stringify(account)
         }
         )
+        // the router helps with the navigation and push('/') takes us to the root '/'
         router.push('/')
     }
     return (
