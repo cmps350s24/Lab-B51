@@ -1,1 +1,123 @@
-[{"accountNo":"AC7766","acctType":"Saving","balance":"5300","firstname":"Sara","lastname":"Abdullah","email":"sara.abdullah@example.com","dateOpened":"2023-08-15","gender":"Female","profileImage":"https://randomuser.me/api/portraits/women/55.jpg"},{"accountNo":"AC5544","acctType":"Saving","balance":"75000","firstname":"Ali","lastname":"Kareem","email":"ali.kareem@example.com","dateOpened":"2023-09-01","gender":"Male","profileImage":"https://randomuser.me/api/portraits/men/52.jpg"},{"accountNo":"AC3322","acctType":"Current","balance":"1200","firstname":"Layla","lastname":"Almasi","email":"layla.almasi@example.com","dateOpened":"2023-09-20","gender":"Female","profileImage":"https://randomuser.me/api/portraits/women/58.jpg"},{"firstname":"ABC","lastname":"adf","acctType":"Current","balance":0,"email":"a@a.com","dateOpened":"2024-04-12","gender":"Female","profileImage":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg","accountNo":"702Z"},{"firstname":"a","lastname":"b","acctType":"Current","balance":0,"email":"a@a.com","dateOpened":"2024-04-26","gender":"Female","profileImage":"http://images-na.ssl-images-amazon.com/images/M/MV5B…","accountNo":"M2mD"},{"firstname":"b","lastname":"b","acctType":"Current","balance":0,"email":"b@b.com","dateOpened":"","gender":"Male","profileImage":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg","accountNo":"-cQk"},{"firstname":"c","lastname":"c","acctType":"Saving","balance":-1000,"email":"c@c.com","dateOpened":"","gender":"Female","profileImage":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg","accountNo":"W9qa"}]
+[
+    {
+        "firstname": "Sara 22",
+        "lastname": "Abdullah",
+        "acctType": "Saving",
+        "balance": 0,
+        "email": "sara.abdullah@example.com",
+        "dateOpened": "2023-09-20",
+        "gender": "Female",
+        "profileImage": "https://randomuser.me/api/portraits/women/55.jpg",
+        "accountNo": "AC5549"
+    },
+    {
+        "firstname": "Ali 666",
+        "lastname": "Kareem 55",
+        "acctType": "Current",
+        "balance": 75000,
+        "email": "ali.kareem@example.com",
+        "dateOpened": "2023-09-20",
+        "gender": "Male",
+        "profileImage": "https://randomuser.me/api/portraits/men/52.jpg",
+        "accountNo": "AC5544"
+    },
+    {
+        "accountNo": "AC5524",
+        "acctType": "Current",
+        "balance": 1200,
+        "firstname": "Layla",
+        "lastname": "Almasi",
+        "email": "layla.almasi@example.com",
+        "dateOpened": "2023-09-20",
+        "gender": "Female",
+        "profileImage": "https://randomuser.me/api/portraits/women/58.jpg"
+    },
+    {
+        "firstname": "ABC",
+        "lastname": "adf",
+        "acctType": "Current",
+        "balance": 0,
+        "email": "a@a.com",
+        "dateOpened": "2024-04-12",
+        "gender": "Female",
+        "profileImage": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+        "accountNo": "702Z"
+    },
+    {
+        "firstname": "a",
+        "lastname": "b",
+        "acctType": "Current",
+        "balance": 0,
+        "email": "a@a.com",
+        "dateOpened": "2024-04-26",
+        "gender": "Female",
+        "profileImage": "http://images-na.ssl-images-amazon.com/images/M/MV5B…",
+        "accountNo": "M2mD"
+    },
+    {
+        "firstname": "b",
+        "lastname": "b",
+        "acctType": "Current",
+        "balance": 0,
+        "email": "b@b.com",
+        "dateOpened": "",
+        "gender": "Male",
+        "profileImage": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+        "accountNo": "-cQk"
+    },
+    {
+        "firstname": "c",
+        "lastname": "c",
+        "acctType": "Saving",
+        "balance": -1000,
+        "email": "c@c.com",
+        "dateOpened": "",
+        "gender": "Female",
+        "profileImage": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
+        "accountNo": "W9qa"
+    },
+    {
+        "firstname": "Sara",
+        "lastname": "Abdullah",
+        "acctType": "Saving",
+        "balance": -1000,
+        "email": "sara.abdullah@example.com",
+        "dateOpened": "",
+        "gender": "Female",
+        "profileImage": "https://randomuser.me/api/portraits/women/55.jpg",
+        "accountNo": "H67L"
+    },
+    {
+        "firstname": "Sara 22",
+        "lastname": "Abdullah",
+        "acctType": "Saving",
+        "balance": -1000,
+        "email": "sara.abdullah@example.com",
+        "dateOpened": "2024-04-26",
+        "gender": "Female",
+        "profileImage": "https://randomuser.me/api/portraits/women/55.jpg",
+        "accountNo": "6FBS"
+    },
+    {
+        "firstname": "Sara 22",
+        "lastname": "Abdullah",
+        "acctType": "Saving",
+        "balance": -1000,
+        "email": "sara.abdullah@example.com",
+        "dateOpened": "2024-04-25",
+        "gender": "Female",
+        "profileImage": "https://randomuser.me/api/portraits/women/55.jpg",
+        "accountNo": "HUvu"
+    },
+    {
+        "firstname": "Sara 22",
+        "lastname": "Abdullah 55",
+        "acctType": "Saving",
+        "balance": -1000,
+        "email": "sara.abdullah@example.com",
+        "dateOpened": "",
+        "gender": "Female",
+        "profileImage": "https://randomuser.me/api/portraits/women/55.jpg",
+        "accountNo": "nO8X"
+    }
+]
