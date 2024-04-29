@@ -1,8 +1,9 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
 }
 
 datasource db {
@@ -11,23 +12,29 @@ datasource db {
 }
 
 model Owner {
-  id           String @id @default(cuid())
+  id           String    @id
   firstname    String
   lastname     String
   email        String
   gender       String
   profileImage String
+  Account      Account[]
 }
 
 model Account {
-  accountNo  String   @id @default(cuid())
-  acctType   String
-  balance    Float
-  dateOpened DateTime @default(now())
+  accountNo   String        @id
+  acctType    String
+  balance     Float
+  dateOpened  DateTime      @default(now())
+  ownerId     String
+  Owner       Owner         @relation(fields: [ownerId], references: [id])
+  Transaction Transaction[]
 }
 
 model Transaction {
-  transId   Int    @id @default(autoincrement())
+  transId   Int     @id @default(autoincrement())
   transType String
   amount    Float
+  accountNo String
+  Account   Account @relation(fields: [accountNo], references: [accountNo])
 }

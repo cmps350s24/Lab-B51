@@ -1,0 +1,35 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table Account {
+  accountNo String [pk]
+  acctType String [not null]
+  balance Float [not null]
+  dateOpened DateTime [default: `now()`, not null]
+  ownerId String [not null]
+  Owner Owner [not null]
+  Transaction Transaction [not null]
+}
+
+Table Owner {
+  id String [pk]
+  firstname String [not null]
+  lastname String [not null]
+  email String [not null]
+  gender String [not null]
+  profileImage String [not null]
+  Account Account [not null]
+}
+
+Table Transaction {
+  transId Int [pk, increment]
+  transType String [not null]
+  amount Float [not null]
+  accountNo String [not null]
+  Account Account [not null]
+}
+
+Ref: Account.ownerId > Owner.id
+
+Ref: Transaction.accountNo > Account.accountNo
