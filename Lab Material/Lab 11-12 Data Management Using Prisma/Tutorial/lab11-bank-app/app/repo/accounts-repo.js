@@ -36,7 +36,16 @@ class AccountsRepo {
         transaction.amount = parseInt(transaction.amount.toString());
 
     }
+    // Aggregations 
+    async getMinAndMaxBalance() {
 
+    }
+    getTop3Accounts() {
+
+    }
+    getTransSum(accountNo, fromDate, toDate) {
+
+    }
 
 }
 
