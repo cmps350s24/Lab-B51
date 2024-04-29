@@ -2,16 +2,6 @@
 //// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 //// ------------------------------------------------------
 
-Table Account {
-  accountNo String [pk]
-  acctType String [not null]
-  balance Float [not null]
-  dateOpened DateTime [default: `now()`, not null]
-  ownerId String [not null]
-  Owner Owner [not null]
-  Transaction Transaction [not null]
-}
-
 Table Owner {
   id String [pk]
   firstname String [not null]
@@ -22,6 +12,16 @@ Table Owner {
   Account Account [not null]
 }
 
+Table Account {
+  accountNo String [pk]
+  acctType String [not null]
+  balance Float [not null]
+  dateOpened DateTime [default: `now()`, not null]
+  ownerId String [not null]
+  Owner Owner [not null]
+  Transaction Transaction [not null]
+}
+
 Table Transaction {
   transId Int [pk, increment]
   transType String [not null]
@@ -30,6 +30,6 @@ Table Transaction {
   Account Account [not null]
 }
 
-Ref: Account.ownerId > Owner.id
+Ref: Account.ownerId > Owner.id [delete: Cascade]
 
-Ref: Transaction.accountNo > Account.accountNo
+Ref: Transaction.accountNo > Account.accountNo [delete: Cascade]
